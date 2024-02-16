@@ -7,6 +7,7 @@ plugins {
 if (libs.versions.config.generateDaggerFactoriesWithAnvil.get().toBoolean()) {
   anvil {
     generateDaggerFactories = true
+    trackSourceFiles = true
   }
 } else {
   apply(plugin = "org.jetbrains.kotlin.kapt")
